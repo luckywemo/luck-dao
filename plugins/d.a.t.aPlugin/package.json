@@ -1,0 +1,27 @@
+{
+  "name": "@game-node/d.a.t.a-plugin",
+  "version": "1.0.0",
+  "description": "D.A.T.A Plugin for SQL query execution and data analysis",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "sql",
+    "query",
+    "analysis"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@virtuals-protocol/game": "^0.1.7",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

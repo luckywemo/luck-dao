@@ -1,0 +1,20 @@
+services:
+  game-starter:
+    image: virtuals-game-starter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    environment:
+      - API_KEY=
+      - WEATHER_API_KEY=
+      - OPENAI_API_KEY=
+      - OPENAI_BASE_URL=
+      - botToken=
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
+      - virtuals:/app
+    restart: always
+
+volumes:
+    virtuals:
